@@ -3,10 +3,130 @@
     <head>
         <title>Alpukat</title>
         <meta name="description" content="khasiat alpukat">
+        <style>
+            body { 
+                background-color: lightblue;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 10px 20px;
+
+            }
+
+            h1{
+                text-align: center;
+                color: blueviolet;
+            }
+            
+            p{
+                text-align: justify;
+                width: fit-content;
+            }
+
+            img{
+                border: 2px solid navy;
+                border-radius: 25px;
+            }
+
+            .center{
+                width: fit-content;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .foto{
+                background-color: black;
+            }
+
+            .foto img{
+                width: 23%;
+            }
+
+            .promo {
+                text-align: center; color: red; font-size: 35px;
+            }
+
+            .cod { 
+                width: fit-content;
+                & p {
+                    padding: 15px;
+                    background-color: aqua;
+                    border: 2px dotted red;
+                    text-align: center;
+                    font-weight: bold;
+                    color: blue;
+                }
+            }
+
+            #tombol{
+                background-color: yellow;
+                color: red;
+                border-color: #eee ;
+            }
+
+            table{
+                width: 70%;
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                border: 1px solid blue;
+                font-family: sans-serif;
+
+                & thead {
+                    background-color: cornflowerblue;
+                    & th {
+                        text-align: center;
+                        color: white;
+                        font-size: 30px;
+                        font-family: sans-serif;
+                    }
+                }
+
+                & .trone{
+                    text-align: center;
+                    background-color: blue;
+                    color: white;
+                    font-size: 30px;
+                    font-family: sans-serif;
+                }
+
+                tbody{
+                    & .trtwo{
+                        text-align: center;
+                        background-color: skyblue;
+                        font-size: 20px;
+                        font-family: sans-serif;
+                    }
+                    & .trthree{
+                        text-align: center;
+                        background-color: white;
+                        font-size: 20px;
+                        font-family: sans-serif;
+                    }
+                }
+            }
+
+            .pvit{
+                width: 70%;
+                margin-bottom: 10px;
+                margin-right: auto;
+                margin-left: auto;
+                font-family: sans-serif;
+                border: 1px solid black;
+                background-color: goldenrod;
+                color: white;
+
+                & .vitamin, .li{
+                    font-family: Arial, sans-serif;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+            
+        </style>
     </head>
     <body>
         <h1>Alpukat Buah Nikmat Kaya Manfaat</h1>
-        <img src="images/alpukat.jpg" alt="buah alpukat"/>
+        <img src="images/alpukat.jpg" alt="buah alpukat" class="center"/>
         <p>
             Alpukat merupakan jenis buah yang memiliki kandungan lemak tinggi,
             sekitar 20 kali lebih tinggi dibanding buah-buahan lain. 
@@ -24,7 +144,7 @@ Daerah penghasil alpukat adalah Jawa Barat,Jawa Timur, sebagian Sumatera, Sulawe
             Bunganya tersembunyi dengan warna hijau kekuningan dan ukuran 5 hingga 10 milimeter. 
             Ukurannya bervariasi dari 7 hingga 20 sentimeter, dengan massa 100 hingga 1000 gram; biji yang besar, 5 hingga 6,4 sentimeter. 
         </p>
-        <img src="images/jusalpukat.png" alt="jus alpukat"/>
+        <img src="images/jusalpukat.png" alt="jus alpukat" class="center"/>
         <p>
     
             Jus alpukat termasuk salah satu minuman yang banyak digemari. 
@@ -36,19 +156,61 @@ Daerah penghasil alpukat adalah Jawa Barat,Jawa Timur, sebagian Sumatera, Sulawe
             Dalam satu sajian buah alpukat (sekitar 50 gram) terdapat mengandung 80 kalori,
             8 gram lemak, 4 gram karbohidrat dan sekitar 1 gram protein.
             Selain itu terdapat juga berbagai macam vitamin seperti E, K, B5 dan B6.</p>
-        <p>
-            <h3>Berikut khasiat buah Alpukat:</h3>
-            <ol>
-                <li>Vitamin E, Memiliki anti aging yang bisa mendorong
+        <p class="tablevit">
+            <h3 class="h3">Berikut khasiat buah Alpukat:</h3>
+            <ol class="pvit">
+                <li class="li"><span class="vitamin">Vitamin E</span>,<br>Memiliki anti aging yang bisa mendorong
                     perawatan kulit alamai
                 </li>
-                <li>Vitamin K, Membantu mencegah terjadinya osteoporosis</li>
-                <li>Viitamin B5, Membantu menurunkan tingkat stress, meringankan rasa sakit</li>
-                <li>Vitamin B6, Membantu treat diabetes, pendarahan menstruasi,
+                <li class="li"><span class="vitamin">Vitamin K</span>,<br> Membantu mencegah terjadinya osteoporosis</li>
+                <li class="li"><span class="vitamin">Viitamin B5</span>,<br> Membantu menurunkan tingkat stress, meringankan rasa sakit</li>
+                <li class="li"><span class="vitamin">Vitamin B6</span>,<br> Membantu treat diabetes, pendarahan menstruasi,
                     insomnia
                 </li>
             </ol>
         </p>
+
+        <table>
+            <thead>
+                <tr class="trone">
+                    <th>NO</th>
+                    <td>JENIS ALPUKAT</td>
+                    <td>HARGA 1 KG</td>
+                    <td>HARGA 2KG</td>
+                    <td>HARGA 3KG</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="trtwo">
+                    <th class="thone">1</th>
+                    <td>Alpukat Mentega</td>
+                    <td>Rp. 35.000,-</td>
+                    <td>Rp. 65.000,-</td>
+                    <td>Rp. 90.000,-</td>
+                </tr>
+                <tr class="trthree">
+                    <th class="thone">2</th>
+                    <td>Alpukat Miki</td>
+                    <td>Rp. 50.000,-</td>
+                    <td>Rp. 90.000,-</td>
+                    <td>Rp. 135.000,-</td>
+                </tr>
+                <tr class="trtwo">
+                    <th class="thone">3</th>
+                    <td>Alpukat Aligator</td>
+                    <td>Rp. 30.000,-</td>
+                    <td>Rp. 55.000,-</td>
+                    <td>Rp. 80.000,-</td>
+                </tr>
+                <tr class="trthree">
+                    <th class="thone">4</th>
+                    <td>Alpukat Kendil</td>
+                    <td>Rp. 35.000,-</td>
+                    <td>Rp. 65.000,-</td>
+                    <td>Rp. 90.000,-</td>
+                </tr>
+            </tbody>
+        </table>
 
 
         <div class="foto">
@@ -68,14 +230,15 @@ Daerah penghasil alpukat adalah Jawa Barat,Jawa Timur, sebagian Sumatera, Sulawe
                 Gimana? Tertarik !
             </h3>
         </div>
-       <div class="cod">
+       <div class=" center cod">
         <p>
             PEMBAYARAN DI TEMPAT / COD <br/>hanya untuk Jakarta, Bekasi dan Depok
             <br/>POTONGAN ONGKIR Rp.5.000,- <br/>UNTUK PEMBELIAN VIA TRANSFER 
+        </p>
        </div>
        <br/>
        <div>
-            <button id="tombol">PESAN SEKARANG</button>
+            <button id="tombol" class=" center">PESAN SEKARANG</button>
        </div>
      
       

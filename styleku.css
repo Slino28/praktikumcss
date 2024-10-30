@@ -1,0 +1,69 @@
+body{
+    background-color: beige;;
+    margin: 10px 10px 10px 10px;
+    
+}
+
+#header{
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+blockquote{
+    text-align: center;
+    border: 2px dotted black;
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    display: flex; 
+    justify-content: center;
+    & li {display: flex;
+    padding: 0px 5px 0px 5px;}
+}
+
+.gambar{
+    display: flex;justify-content: center;
+    
+}
+
+.gambar img{
+    width: 23%;
+    border: 2px navy;
+}
+
+.B{
+    font-size: 30px;
+    color: blue;
+}
+
+.koleksi{
+    background-color: black;
+}
+
+.koleksi img {
+    width: 200px;
+    padding:  20px 50px 20px 50px
+}
+
+.promo{
+    text-align: center; color: red; font-size: 25px;
+}
+
+.promo ol{
+    display: flex;
+    justify-content: center;
+    & li {
+        display: flex;
+        padding: 5px 5px 5px 5px;
+    }
+}
+
+#id {
+    
+}
+
+
